@@ -7,7 +7,7 @@
   
   [View the code](Forecasting.ipynb)
   
-  <img src="assets/Intro.png" alt="logo" width="700" height="auto"/>
+  <img src="2_Assets/Intro.png" alt="logo" width="700" height="auto"/>
 </div>
 
 
@@ -36,7 +36,7 @@ For this project, real-world data of beer consumption in Russia were used. All d
 ## <a name="s2.1"/> 1. Time-series clustering
 Dynamic time warping (DTW) was used to cluster similar time-series and the result was fed to a model as a feature to help it in grouping similar observations. One may also build a separate model for each cluster, significantly reducing the time needed for tuning models.
 
-<img src="assets/Clustering.png" alt="logo" width="700" height="auto"/>
+<img src="2_Assets/Clustering.png" alt="logo" width="700" height="auto"/>
 
 ## <a name="s2.2"/> 2. Hyperparameter tuning with Optuna
 The framework used for optimisation of hyperparameters was Optuna. Here are some key points of the employed optimisation algorithm:
@@ -59,4 +59,4 @@ The framework used for optimisation of hyperparameters was Optuna. Here are some
 
 To determine feature importance, SHAP values were used. Aggregating them on various levels, it is possible to analyse data from different angles. For instance, one can group variables into more general categories and aggregate SHAP values by time periods. In this way, it can be quite easy to see what features contributed to spikes, dips and other patterns of interest
 
-<img src="assets/SHAP.png" alt="logo" width="700" height="auto"/>
+<img src="2_Assets/SHAP.png" alt="logo" width="700" height="auto"/>
