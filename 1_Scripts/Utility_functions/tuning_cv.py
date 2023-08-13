@@ -119,7 +119,7 @@ def func_to_minimise_lgb(model, x_train, y_train, x_val_es, y_val_es,
 class objective_lgb:
     def __init__(self, optimised_value, x_train, y_train, x_val_es, y_val_es,
                  cv, suppress_warnings, daily_data):
-        """Bla.bla."""
+        """Objective function with user-defined arguments"""
 
         self.optimised_value = optimised_value
         self.x_train = x_train
