@@ -24,22 +24,26 @@
 
 # <a name="s1"/> About the project
 
-## <a name="s1.1"/> 1. Goal: 
+## <a name="s1.1"/> 1. Goal
+
 Tackle the problem of hierarchical time-series forecasting using gradient boosting.
 
-## <a name="s1.2"/> 2. Data description: 
+## <a name="s1.2"/> 2. Data description
+
 For this project, real-world data of beer consumption in Russia were used. All data were anonimised and modified. The dataset consists of more than 1400 weekly time series and has over 130000 observations.
 
 
 # <a name="s2"/> Key features
 
 ## <a name="s2.1"/> 1. Time-series clustering
+
 Dynamic time warping (DTW) was used to cluster similar time-series and the result was fed to a model as a feature to help it in grouping similar observations. One may also build a separate model for each cluster, significantly reducing the time needed for tuning models.
 
 <img src="2_Assets/Clustering.png" alt="logo" width="700" height="auto"/>
 
 ## <a name="s2.2"/> 2. Hyperparameter tuning with Optuna
-The framework used for optimisation of hyperparameters was Optuna. Here are some key points of the employed optimisation algorithm:
+
+The framework used for hyperparameter optimisation was Optuna. Here are some key points of the employed optimisation algorithm:
 
 * An Optuna objective function with user-defined parameters;
 * Custom time-series CV for accommodating hierarchical structure of data;
@@ -57,6 +61,6 @@ The framework used for optimisation of hyperparameters was Optuna. Here are some
 
 ## <a name="s2.3"/> 3. SHAP values
 
-To determine feature importance, SHAP values were used. Aggregating them on various levels, it is possible to analyse data from different angles. For instance, one can group variables into more general categories and aggregate SHAP values by time periods. In this way, it can be quite easy to see what features contributed to spikes, dips and other patterns of interest
+To determine feature importance, SHAP values were calculated. Aggregating them on various levels, it is possible to analyse data from different angles. For instance, one can group variables into more general categories and aggregate SHAP values by time periods. In this way, it can be quite easy to see what features contributed to spikes, dips and other patterns of interest.
 
 <img src="2_Assets/SHAP.png" alt="logo" width="700" height="auto"/>
