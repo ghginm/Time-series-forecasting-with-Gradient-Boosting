@@ -61,6 +61,6 @@ The framework used for hyperparameter optimisation was Optuna. Here are some key
 
 ## <a name="s2.3"/> 3. SHAP values
 
-To determine feature importance, SHAP values were calculated. Aggregating them on various levels, it is possible to analyse data from different angles. For instance, one can group variables into more general categories and aggregate SHAP values by time periods. In this way, it can be quite easy to see what features contributed to spikes, dips and other patterns of interest.
+To determine feature importance, SHAP values were calculated. By aggregating them on various levels we can analyse data from different angles. For instance, one can group variables into more general categories and aggregate SHAP values by time periods. This way, it can be easily seen what features contributed to spikes, dips and other patterns of interest.
 
 <img src="2_Assets/SHAP.png" alt="logo" width="700" height="auto"/>
