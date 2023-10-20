@@ -30,7 +30,8 @@ Tackle the problem of hierarchical time-series forecasting using gradient boosti
 
 ## <a name="s1.2"/> 2. Data description
 
-For this project, real-world data of beer consumption in Russia were used. All data were anonimised and modified. The dataset consists of more than 1400 weekly time series and has over 130000 observations.
+For this project, real-world data of beer consumption in Russia were used. All data were anonimised and modified; permission was given to share data for educational purposes. The dataset consists of more than 1400 weekly time series and has over 130000 observations. A different dataset was used for the following project: 
+[long short-term memory neural networks](https://github.com/).
 
 
 # <a name="s2"/> Key features
